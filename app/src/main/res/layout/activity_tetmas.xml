@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.yucatio.tetmas.view.TetmasView
+        android:id="@+id/tetmas_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <com.google.android.gms.ads.AdView android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        ads:adUnitId="ca-app-pub-2601595556905046/9547715210"
+        ads:adSize="BANNER"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
