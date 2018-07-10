@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "com.yucatio.tetmas"
@@ -26,9 +26,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1'
-    compile 'com.google.android.gms:play-services:7.5.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:21.0.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.4.1'
+    implementation 'com.google.android.gms:play-services:7.5.0'
 
 }
