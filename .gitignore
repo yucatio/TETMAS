@@ -8,3 +8,5 @@
 # IntelliJ
 *.iml
 
+# Google Services
+google-services.json
