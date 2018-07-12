@@ -9,6 +9,7 @@ import android.view.WindowManager;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.yucatio.tetmas.framework.Game;
 import com.yucatio.tetmas.framework.Input;
 import com.yucatio.tetmas.framework.Screen;
@@ -38,6 +39,8 @@ public class TetmasActivity extends Activity implements Game, GLSurfaceView.Rend
 
     private long startTime;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +53,12 @@ public class TetmasActivity extends Activity implements Game, GLSurfaceView.Rend
         view = (TetmasView) findViewById(R.id.tetmas_view);
         view.setRenderer(this);
 
-        // AdView をリソースとしてルックアップしてリクエストを読み込む
-        AdView adView = (AdView)this.findViewById(R.id.adView);
+        // Ad setting
+        MobileAds.initialize(this, "ca-app-pub-2601595556905046~6594248813");
+        mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-        adView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);
+
 
         input = new AndroidInput(view);
 
