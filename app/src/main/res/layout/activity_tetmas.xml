@@ -17,6 +17,6 @@
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2601595556905046/9547715210"/>
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
 </LinearLayout>
