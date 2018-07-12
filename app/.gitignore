@@ -1,5 +1,8 @@
 # Built application files
 *.apk
 
+# Built application directory
+release/
+
 # Gradle files
 /build
