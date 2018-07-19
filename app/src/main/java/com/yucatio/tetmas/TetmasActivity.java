@@ -39,7 +39,7 @@ public class TetmasActivity extends Activity implements Game, GLSurfaceView.Rend
 
     private long startTime;
 
-    private AdView mAdView;
+//    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +54,10 @@ public class TetmasActivity extends Activity implements Game, GLSurfaceView.Rend
         view.setRenderer(this);
 
         // Ad setting
-        MobileAds.initialize(this, "ca-app-pub-2601595556905046~6594248813");
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+//        MobileAds.initialize(this, "ca-app-pub-2601595556905046~6594248813");
+//        mAdView = (AdView) findViewById(R.id.adView);
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//        mAdView.loadAd(adRequest);
 
 
         input = new AndroidInput(view);
